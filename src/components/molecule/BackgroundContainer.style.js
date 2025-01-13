@@ -10,5 +10,11 @@ export const BackgroundContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow: auto;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  &::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
   height: 100vh;
 `;

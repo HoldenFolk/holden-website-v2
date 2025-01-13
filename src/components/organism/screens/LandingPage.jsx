@@ -63,5 +63,5 @@ const CenterContainer = styled.div`
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
-  margin-bottom: 100px;
+  height: 100vh;
 `;

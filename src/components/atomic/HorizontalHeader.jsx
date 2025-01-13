@@ -19,11 +19,16 @@ const HorizontalHeader = ({
 
 const HeaderDiv = styled.div`
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 0rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
   margin-bottom: 1rem;
-  position: relative;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+  backdrop-filter: blur(10px); /* Apply blur to the background content */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 50px;
+  height: 4rem;
 `;
 
 const LeftContent = styled.div`
@@ -43,9 +48,9 @@ const CenterContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1; /* Allow the center content to grow/shrink dynamically */
+  flex: 1;
   gap: 30px;
-  margin-top: 3rem;
+  margin-top: 0rem;
 
   @media (max-width: 600px) {
     margin-top: 0;
