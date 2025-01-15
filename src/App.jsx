@@ -1,11 +1,13 @@
 import React from 'react';
 import Theme from './providers/Theme';
-import NavigationRouter from './components/organism/NavigationRouter';
+import MainPage from './components/organism/screens/MainPage';
+import { GlobalStyle } from './styles/globalStyle';
 
 const App = () => {
   return (
     <Theme>
-      <NavigationRouter />
+      <GlobalStyle />
+      <MainPage />
     </Theme>
   );
 };

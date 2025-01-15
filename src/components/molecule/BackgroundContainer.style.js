@@ -10,6 +10,7 @@ export const BackgroundContainer = styled.div`
   align-items: center;
   flex-direction: column;
   overflow: auto;
+  scroll-behavior: smooth;
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
   &::-webkit-scrollbar {

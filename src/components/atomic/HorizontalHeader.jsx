@@ -27,6 +27,7 @@ const HeaderDiv = styled.div`
   background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
   backdrop-filter: blur(10px); /* Apply blur to the background content */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
+  z-index: 1000; /* Ensures the header appears above other components */
   border-radius: 50px;
   height: 4rem;
 `;
