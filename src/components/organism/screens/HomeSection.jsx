@@ -30,12 +30,19 @@ const HomeSection = () => {
     document.body.removeChild(link);
   };
 
+  const onContactClick = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <CenterContainer>
       <LandingTitle />
       <ButtonContainer>
         <Button text="Download Resume" variant="fill" onClick={onButtonClick} />
-        <Button text="Contact Me" variant="outline" onClick={onButtonClick} />
+        <Button text="Contact Me" variant="outline" onClick={onContactClick} />
       </ButtonContainer>
       <ButtonContainer>
         <Socials />

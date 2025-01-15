@@ -1,4 +1,3 @@
-// Author: Holden Folk
 // Function to save an item with expiration in local storage
 const saveItemWithExpiry = (key, value, ttl) => {
   const now = new Date();

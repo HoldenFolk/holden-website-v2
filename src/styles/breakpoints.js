@@ -1,4 +1,3 @@
-// Author: Holden Folk
 import { sizes } from './sizes';
 
 export const breakpoints = {

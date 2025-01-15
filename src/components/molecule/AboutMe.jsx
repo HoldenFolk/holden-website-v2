@@ -80,7 +80,7 @@ const fadeIn = keyframes`
 
 // Styled components
 const PageContainer = styled.div`
-  padding: 10rem;
+  padding: 7rem;
 `;
 
 const TitleCenterContainer = styled.div`

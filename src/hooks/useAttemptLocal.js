@@ -1,4 +1,3 @@
-// Author: Holden Folk
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getAuthTokenLocal, getUserIdLocal } from '../utils/localStorage';

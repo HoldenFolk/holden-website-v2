@@ -1,11 +1,11 @@
 import React from 'react';
 import ContactForm from '../../molecule/ContactForm';
-import styled from 'styled-components';
+import styled, { StyleSheetConsumer } from 'styled-components';
 import { Header, SubHeader } from '../../atomic/Headers.style';
 
 const ContactSection = () => {
   return (
-    <>
+    <PageContainer>
       <HeaderContainer>
         <Header>Contact Me </Header>
         <SubHeader>I want to hear from you.</SubHeader>
@@ -13,11 +13,15 @@ const ContactSection = () => {
       <FormDiv>
         <ContactForm></ContactForm>
       </FormDiv>
-    </>
+    </PageContainer>
   );
 };
 
 export default ContactSection;
+
+const PageContainer = styled.div`
+  padding: 7rem;
+`;
 
 const HeaderContainer = styled.div`
   text-align: center;

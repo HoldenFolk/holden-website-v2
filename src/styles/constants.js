@@ -1,4 +1,3 @@
-// Author: Holden Folk
 import { palette } from './palette';
 import { fonts } from './fonts';
 import { sizes } from './sizes';

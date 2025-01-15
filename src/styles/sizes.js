@@ -1,4 +1,3 @@
-// Author: Holden Folk
 export const sizes = {
   maxWidth: 1100,
   mobileS: 320,
