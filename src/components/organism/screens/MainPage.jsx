@@ -4,6 +4,7 @@ import LandingPageHeader from '../../molecule/LandingPageHeader';
 import { BackgroundContainer } from '../../molecule/BackgroundContainer.style';
 import AboutMe from '../../molecule/AboutMe';
 import HomeSection from './HomeSection';
+import ContactSection from './ContactSection';
 
 const HomeLink = () => (
   <div id="home">
@@ -17,6 +18,12 @@ const AboutLink = () => (
   </div>
 );
 
+const ContactLink = () => (
+  <div id="contact">
+    <ContactSection />
+  </div>
+);
+
 // Ladning Page Screen Component
 const MainPage = () => {
   return (
@@ -25,6 +32,7 @@ const MainPage = () => {
         <LandingPageHeader />
         <HomeLink />
         <AboutLink />
+        <ContactLink />
       </BackgroundContainer>
     </PageTemplate>
   );

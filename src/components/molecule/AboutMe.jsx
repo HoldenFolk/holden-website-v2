@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import headshot from '../../assets/ProfessionalShotSharp.jpg';
 import codeScreenshot from '../../assets/CodeScreenshot.jpg';
+import { Header, SubHeader } from '../atomic/Headers.style';
 
 // TODO: Add github link
 const AboutMe = () => (
@@ -9,7 +10,7 @@ const AboutMe = () => (
     <TitleCenterContainer>
       <TitleContainer>
         <Header>About Me</Header>
-        <SubHeader>A little bit about Holden</SubHeader>
+        <SubHeader>A bit about Holden</SubHeader>
       </TitleContainer>
     </TitleCenterContainer>
 
@@ -94,29 +95,15 @@ const TitleContainer = styled.div`
   width: 60%;
 `;
 
-const Header = styled.h1`
-  color: ${({ theme }) => theme.colors.white};
-  font-family: ${({ theme }) => theme.fonts.primary};
-  opacity: 60%;
-  font-size: 3rem;
-  font-weight: bold;
-  opacity: 0.8;
-`;
-
-const SubHeader = styled.h2`
-  color: ${({ theme }) => theme.colors.white};
-  font-family: ${({ theme }) => theme.fonts.primary};
-  font-size: 2rem;
-  font-weight: bold;
-`;
-
 const SectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
 `;
 
-const Section = styled.div`
+const Section = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== 'reverse',
+})`
   display: flex;
   align-items: center;
   gap: 1rem;
