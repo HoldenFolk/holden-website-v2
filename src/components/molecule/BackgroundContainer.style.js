@@ -1,4 +1,3 @@
-// Author: Holden Folk
 import styled from 'styled-components';
 import backgroundImage from '../../assets/backsplash.png';
 

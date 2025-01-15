@@ -7,8 +7,10 @@ import { BackgroundContainer } from '../../molecule/BackgroundContainer.style';
 import Button from '../../atomic/Button';
 import CV from '../../../assets/resumeHoldenFolk-1.pdf';
 import Socials from '../../molecule/Socials';
+import AboutMe from '../../molecule/AboutMe';
 
 // Ladning Page Screen Component
+// TODO: Encapsulate the landing page logic
 export const LandingPage = () => {
   // Download resume on click
   const onButtonClick = () => {
@@ -42,6 +44,7 @@ export const LandingPage = () => {
             <Socials />
           </ButtonContainer>
         </CenterContainer>
+        <AboutMe />
       </BackgroundContainer>
     </PageTemplate>
   );
@@ -63,5 +66,5 @@ const CenterContainer = styled.div`
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 `;
