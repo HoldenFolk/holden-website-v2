@@ -30,6 +30,8 @@ const HeaderDiv = styled.div`
   z-index: 1000; /* Ensures the header appears above other components */
   border-radius: 50px;
   height: 4rem;
+  width: 40%;
+  min-width: 300px;
 `;
 
 const LeftContent = styled.div`
@@ -44,14 +46,9 @@ const LeftContent = styled.div`
 const CenterContent = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex: 1;
+  justify-content: space-between;
+  flex: 1; /* Allows the center content to grow and fill available space */
   gap: 30px;
-  margin-top: 0rem;
-
-  @media (max-width: 600px) {
-    margin-top: 0;
-  }
 `;
 
 const RightContent = styled.div`

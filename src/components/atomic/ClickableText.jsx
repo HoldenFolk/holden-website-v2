@@ -18,7 +18,11 @@ const ClickableText = ({ text, variant = 'light', href = '#', ...props }) => {
 
 const StyledLink = styled.a`
   max-height: 50px;
-  font-size: 16px;
+  font-size: clamp(
+    0.75rem,
+    1.5vw,
+    1rem
+  ); /* Scales font size between 1rem and 2rem */
   font-weight: bold;
   text-decoration: none;
   background-color: transparent;

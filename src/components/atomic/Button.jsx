@@ -21,7 +21,7 @@ const Button = ({ text, variant = 'fill', ...props }) => {
 const StyledButton = styled.button`
   padding: 10px 20px;
   max-height: 50px;
-  font-size: 16px;
+  font-size: 1rem;
   border-radius: 20px;
   font-family: ${({ theme }) => theme.fonts.primary || 'Arial, sans-serif'};
   border: ${({ variant, theme }) =>

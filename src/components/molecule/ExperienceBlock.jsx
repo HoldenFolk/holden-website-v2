@@ -31,6 +31,7 @@ const StyledBlock = styled.div`
   border: 3px solid;
   display: flex;
   flex-direction: column;
+  width: 100%;
 `;
 
 const TopSection = styled.div`
@@ -42,7 +43,6 @@ const TopSection = styled.div`
 const BottomBorderWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
   row-gap: 0.5rem;
   border-bottom: 1px solid;
   align-items: flex-start;

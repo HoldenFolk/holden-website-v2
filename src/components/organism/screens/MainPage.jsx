@@ -53,7 +53,7 @@ const SectionsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   row-gap: 4rem;
-  padding-left: 9rem;
-  padding-right: 9rem;
-  width: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  width: 100vw;
 `;

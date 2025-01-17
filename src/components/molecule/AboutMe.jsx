@@ -114,6 +114,7 @@ const SectionImage = styled.img`
   flex: 1;
   width: 40%;
   max-width: 400px;
+  min-width: 100px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
