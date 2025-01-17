@@ -37,6 +37,7 @@ const LandingTitle = () => {
 };
 
 const TitleCenterContainer = styled.div`
+  margin-top: 7rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,14 +45,12 @@ const TitleCenterContainer = styled.div`
 
 const TitleContainer = styled.div`
   text-align: center;
-  margin: 2rem 0;
-  width: 60%;
+  margin-bottom: 2rem;
+  max-width: 700px;
 `;
 
 const SubHeader = styled(StyledSubHeader)`
   font-weight: bold;
-  white-space: nowrap; /* Prevent text wrapping during typewriter effect */
-  overflow: hidden; /* Hide overflowing text */
 `;
 
 const ContentText = styled.h4`

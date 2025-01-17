@@ -86,7 +86,6 @@ const TitleCenterContainer = styled.div`
 
 const TitleContainer = styled.div`
   text-align: center;
-  width: 60%;
 `;
 
 const SectionContainer = styled.div`
