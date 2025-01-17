@@ -9,7 +9,8 @@ export const BackgroundContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  overflow: auto;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-y: auto; /* Enable vertical scrolling */
   scroll-behavior: smooth;
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
