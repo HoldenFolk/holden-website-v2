@@ -55,4 +55,5 @@ const SectionsContainer = styled.div`
   row-gap: 4rem;
   padding-left: 9rem;
   padding-right: 9rem;
+  width: 100%;
 `;
