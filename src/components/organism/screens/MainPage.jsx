@@ -1,5 +1,4 @@
 import React from 'react';
-import { PageTemplate } from '../../template/index';
 import LandingPageHeader from '../../molecule/LandingPageHeader';
 import { BackgroundContainer } from '../../molecule/BackgroundContainer.style';
 import AboutMe from '../../molecule/AboutMe';
@@ -35,17 +34,15 @@ const ContactLink = () => (
 // Ladning Page Screen Component
 const MainPage = () => {
   return (
-    <PageTemplate>
-      <BackgroundContainer>
-        <SectionsContainer>
-          <LandingPageHeader />
-          <HomeLink />
-          <AboutLink />
-          <ExperienceLink />
-          <ContactLink />
-        </SectionsContainer>
-      </BackgroundContainer>
-    </PageTemplate>
+    <BackgroundContainer>
+      <SectionsContainer>
+        <LandingPageHeader />
+        <HomeLink />
+        <AboutLink />
+        <ExperienceLink />
+        <ContactLink />
+      </SectionsContainer>
+    </BackgroundContainer>
   );
 };
 
