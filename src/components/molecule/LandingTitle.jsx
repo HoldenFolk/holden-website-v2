@@ -1,18 +1,35 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { Header, SubHeader } from '../atomic/Headers.style';
+import { Header, SubHeader as StyledSubHeader } from '../atomic/Headers.style';
 
 // Title content component for the landing page
 const LandingTitle = () => {
+  const [displayedText, setDisplayedText] = useState('');
+  const fullText = 'Welcome to my page';
+
+  useEffect(() => {
+    let index = 0;
+    const timer = setInterval(() => {
+      if (index < fullText.length) {
+        setDisplayedText(fullText.slice(0, index + 1)); // Correctly slices the text
+        index++;
+      } else {
+        clearInterval(timer);
+      }
+    }, 100); // Adjust typing speed (milliseconds per character)
+
+    return () => clearInterval(timer); // Cleanup interval on component unmount
+  }, []);
+
   return (
     <TitleCenterContainer>
       <TitleContainer>
         <Header>Holden Folk</Header>
-        <SubHeader>Welcome to my page</SubHeader>
+        <SubHeader>{displayedText}</SubHeader>
         <ContentText>
           I&apos;m a CS major at McGill University with a passion for software
           design and web development. Explore this page to learn about my
-          experiences, intrests, and projects.
+          experiences, interests, and projects.
         </ContentText>
       </TitleContainer>
     </TitleCenterContainer>
@@ -29,6 +46,12 @@ const TitleContainer = styled.div`
   text-align: center;
   margin: 2rem 0;
   width: 60%;
+`;
+
+const SubHeader = styled(StyledSubHeader)`
+  font-weight: bold;
+  white-space: nowrap; /* Prevent text wrapping during typewriter effect */
+  overflow: hidden; /* Hide overflowing text */
 `;
 
 const ContentText = styled.h4`

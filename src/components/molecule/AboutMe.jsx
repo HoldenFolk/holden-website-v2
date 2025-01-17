@@ -6,14 +6,13 @@ import { Header, SubHeader } from '../atomic/Headers.style';
 
 // TODO: Add github link
 const AboutMe = () => (
-  <PageContainer>
+  <>
     <TitleCenterContainer>
       <TitleContainer>
         <Header>About Me</Header>
         <SubHeader>A bit about Holden</SubHeader>
       </TitleContainer>
     </TitleCenterContainer>
-
     <SectionContainer>
       <Section>
         <SectionImage src={headshot} alt="Who am I?" />
@@ -22,9 +21,9 @@ const AboutMe = () => (
           <p>
             Hello! My name is Holden. I am a fourth year computer science
             student at McGill University. My interests include software design
-            and development, web design, database systems, and brain-inspired
-            AI. I have currently completed internships in web development,
-            mobile app development, finance, and am always looking for further
+            and development, web design, database systems, and data privacy. I
+            have currently completed internships in web development, mobile app
+            development, finance, and am always looking for further
             opportunities to learn and collaborate in interesting environments.
             Check out my resume and LinkedIn to learn more about my experience.
           </p>
@@ -64,7 +63,7 @@ const AboutMe = () => (
         </SectionText>
       </Section>
     </SectionContainer>
-  </PageContainer>
+  </>
 );
 
 const fadeIn = keyframes`
@@ -76,11 +75,6 @@ const fadeIn = keyframes`
     opacity: 1;
     transform: translateY(0);
   }
-`;
-
-// Styled components
-const PageContainer = styled.div`
-  padding: 7rem;
 `;
 
 const TitleCenterContainer = styled.div`

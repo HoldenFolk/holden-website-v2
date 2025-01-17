@@ -101,7 +101,7 @@ const FormWrapper = styled.div`
   width: 70%;
   margin: 2rem auto;
   padding: 2rem;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   background-color: ${({ theme }) => theme.colors.fourth};
