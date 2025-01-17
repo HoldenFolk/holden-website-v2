@@ -61,6 +61,7 @@ export default ExperienceSection;
 
 const Container = styled.div`
   width: 100%;
+  margin-top: 7rem;
 `;
 
 const TitleContainer = styled.div`

@@ -11,7 +11,7 @@ const LandingTitle = () => {
     let index = 0;
     const timer = setInterval(() => {
       if (index < fullText.length) {
-        setDisplayedText(fullText.slice(0, index + 1)); // Correctly slices the text
+        setDisplayedText(fullText.slice(0, index + 1));
         index++;
       } else {
         clearInterval(timer);

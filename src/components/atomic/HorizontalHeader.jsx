@@ -39,10 +39,6 @@ const LeftContent = styled.div`
   margin-top: 1rem;
   justify-content: flex-start;
   align-items: flex-start;
-
-  @media (max-width: 600px) {
-    margin-left: 0;
-  }
 `;
 
 const CenterContent = styled.div`
@@ -65,10 +61,6 @@ const RightContent = styled.div`
   gap: 30px;
   margin-right: 2rem;
   margin-top: 1rem;
-
-  @media (max-width: 600px) {
-    margin-right: 0;
-  }
 `;
 
 export default HorizontalHeader;

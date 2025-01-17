@@ -82,6 +82,7 @@ const TitleCenterContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
+  margin-top: 7rem;
 `;
 
 const TitleContainer = styled.div`
@@ -111,8 +112,8 @@ const Section = styled.div.withConfig({
 
 const SectionImage = styled.img`
   flex: 1;
+  width: 40%;
   max-width: 400px;
-  min-width: 250px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

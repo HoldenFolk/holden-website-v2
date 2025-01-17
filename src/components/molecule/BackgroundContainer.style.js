@@ -17,4 +17,5 @@ export const BackgroundContainer = styled.div`
     display: none; /* For Chrome, Safari, and Opera */
   }
   height: 100vh;
+  width: 100%;
 `;

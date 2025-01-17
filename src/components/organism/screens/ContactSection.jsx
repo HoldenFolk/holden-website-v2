@@ -22,6 +22,7 @@ export default ContactSection;
 const HeaderContainer = styled.div`
   text-align: center;
   width: 100%;
+  margin-top: 7rem;
 `;
 
 const FormDiv = styled.div`
