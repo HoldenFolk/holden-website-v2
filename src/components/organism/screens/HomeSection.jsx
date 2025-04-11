@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import LandingTitle from '../../molecule/LandingTitle';
 import Button from '../../atomic/Button';
-import CV from '../../../assets/resumeHoldenFolk-1.pdf';
+import CV from '../../../assets/ResumeHoldenFolk1.pdf';
 import Socials from '../../molecule/Socials';
 
 // Landing Page Screen Component
@@ -24,7 +24,7 @@ const HomeSection = () => {
   const onButtonClick = () => {
     const link = document.createElement('a');
     link.href = CV;
-    link.download = 'resumeHoldenFolk-1.pdf';
+    link.download = 'ResumeHoldenFolk1.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
