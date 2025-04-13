@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import LandingTitle from '../../molecule/LandingTitle';
 import Button from '../../atomic/Button';
-import CV from '../../../assets/ResumeHoldenFolk1.pdf';
+import CV from '../../../../public/ResumeHoldenFolk1.pdf';
 import Socials from '../../molecule/Socials';
 
 // Landing Page Screen Component
