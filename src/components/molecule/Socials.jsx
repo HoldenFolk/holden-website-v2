@@ -4,7 +4,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Socials = () => {
   const githubLink = 'https://github.com/HoldenFolk';
-  const linkedinLink = 'https://www.linkedin.com/in/holden-folk-995b8220a/';
+  const linkedinLink = 'https://www.linkedin.com/in/holden-folk/';
   return (
     <>
       <Icon
