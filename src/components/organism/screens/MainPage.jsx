@@ -5,6 +5,7 @@ import AboutMe from '../../molecule/AboutMe';
 import HomeSection from './HomeSection';
 import ContactSection from './ContactSection';
 import ExperienceSection from './ExperienceSection';
+import ProjectsSection from './ProjectsSection';
 import styled from 'styled-components';
 
 const HomeLink = () => (
@@ -25,6 +26,12 @@ const ExperienceLink = () => (
   </div>
 );
 
+const ProjectsLink = () => (
+  <div id="projects">
+    <ProjectsSection />
+  </div>
+);
+
 const ContactLink = () => (
   <div id="contact">
     <ContactSection />
@@ -40,6 +47,7 @@ const MainPage = () => {
         <HomeLink />
         <AboutLink />
         <ExperienceLink />
+        <ProjectsLink />
         <ContactLink />
       </SectionsContainer>
     </BackgroundContainer>

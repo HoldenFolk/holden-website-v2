@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import headshot from '../../assets/ProfessionalShotSharp.jpg';
+import headshot from '../../assets/ProfessionalShotSharp.jpeg';
 import codeScreenshot from '../../assets/CodeScreenshot.jpg';
 import { Header, SubHeader } from '../atomic/Headers.style';
 
