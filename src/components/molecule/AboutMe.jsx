@@ -15,7 +15,9 @@ const AboutMe = () => (
     </TitleCenterContainer>
     <SectionContainer>
       <Section>
-        <SectionImage src={headshot} alt="Who am I?" />
+        <ImageWrapper>
+          <SectionImage src={headshot} alt="Who am I?" />
+        </ImageWrapper>
         <SectionText>
           <h3>Who am I?</h3>
           <p>
@@ -33,10 +35,12 @@ const AboutMe = () => (
       </Section>
 
       <Section reverse>
-        <SectionImage
-          src="https://reporter.mcgill.ca/wp-content/uploads/2022/10/McGill-Arts-fall-colours-scaled.jpg"
-          alt="Why do I enjoy computer science?"
-        />
+        <ImageWrapper>
+          <SectionImage
+            src="https://reporter.mcgill.ca/wp-content/uploads/2022/10/McGill-Arts-fall-colours-scaled.jpg"
+            alt="Why do I enjoy computer science?"
+          />
+        </ImageWrapper>
         <SectionText>
           <h3>Why do I enjoy computer science?</h3>
           <p>
@@ -52,7 +56,9 @@ const AboutMe = () => (
       </Section>
 
       <Section>
-        <SectionImage src={codeScreenshot} alt="What is this website?" />
+        <ImageWrapper>
+          <SectionImage src={codeScreenshot} alt="What is this website?" />
+        </ImageWrapper>
         <SectionText>
           <h3>What is this website?</h3>
           <p>
@@ -94,7 +100,7 @@ const TitleContainer = styled.div`
 const SectionContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 `;
 
 const Section = styled.div.withConfig({
@@ -102,27 +108,58 @@ const Section = styled.div.withConfig({
 })`
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin: 2rem 0;
+  gap: 2.5rem;
+  padding: 2rem 2.5rem;
+  background-color: ${({ theme }) => theme.colors.fourth};
+  border-radius: 16px;
+  border-left: 4px solid ${({ theme }) => theme.colors.secondary};
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
   animation: ${fadeIn} 1s ease-out;
   flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
 
+  ${({ reverse, theme }) =>
+    reverse &&
+    `
+    border-left: none;
+    border-right: 4px solid ${theme.colors.secondary};
+  `}
+
   @media (max-width: 768px) {
     flex-direction: column;
+    border-left: 4px solid;
+    border-right: none;
+    padding: 1.5rem;
+  }
+`;
+
+const ImageWrapper = styled.div`
+  flex-shrink: 0;
+  width: 330px;
+  height: 330px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 0 3px ${({ theme }) => theme.colors.secondary},
+    0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 3px ${({ theme }) => theme.colors.secondary},
+      0 12px 32px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 220px;
   }
 `;
 
 const SectionImage = styled.img`
-  flex: 1;
-  width: 40%;
-  max-width: 400px;
-  min-width: 100px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition:
-    transform 1s ease,
-    box-shadow 1s ease;
+  object-position: top;
+  display: block;
 `;
 
 const SectionText = styled.div`
@@ -132,15 +169,19 @@ const SectionText = styled.div`
   h3 {
     color: ${({ theme }) => theme.colors.secondary};
     font-family: ${({ theme }) => theme.fonts.primary};
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 1rem;
+    letter-spacing: 0.02em;
   }
 
   p {
     color: ${({ theme }) => theme.colors.white};
     font-family: ${({ theme }) => theme.fonts.primary};
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    opacity: 0.85;
+    margin: 0;
   }
 `;
 
