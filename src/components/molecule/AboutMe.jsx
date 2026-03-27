@@ -138,13 +138,17 @@ const ImageWrapper = styled.div`
   height: 330px;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 0 0 3px ${({ theme }) => theme.colors.secondary},
+  box-shadow:
+    0 0 0 3px ${({ theme }) => theme.colors.secondary},
     0 8px 24px rgba(0, 0, 0, 0.4);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 
   &:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 0 3px ${({ theme }) => theme.colors.secondary},
+    box-shadow:
+      0 0 0 3px ${({ theme }) => theme.colors.secondary},
       0 12px 32px rgba(0, 0, 0, 0.5);
   }
 
