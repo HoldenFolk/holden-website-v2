@@ -6,6 +6,17 @@ import ExperienceBlock from '../../molecule/ExperienceBlock';
 const ExperienceSection = () => {
   const experiences = [
     {
+      title: 'Data / AI Engineer',
+      workplace: 'Sagard',
+      date: 'May 2025 - Present',
+      bullets: [
+        'Built and deployed GenAI-powered Python applications using LLMs to extract, verify, and summarize information from complex legal documents.',
+        'Designed and implemented Retrieval-Augmented Generation (RAG) pipelines, including data ingestion, embedding creation, and prompt evaluation to improve answer accuracy in internal tools.',
+        'Developed REST APIs to serve AI-powered features to internal React applications.',
+        'Deployed and maintained AI workflows on Google Cloud, integrating with scalable data pipelines built using PySpark.',
+      ],
+    },
+    {
       title: 'Front End Intern',
       workplace: 'Kaidu AI',
       date: 'May 2024 - August 2024',

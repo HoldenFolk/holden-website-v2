@@ -19,13 +19,15 @@ const AboutMe = () => (
         <SectionText>
           <h3>Who am I?</h3>
           <p>
-            Hello! My name is Holden. I am a fourth year computer science
-            student at McGill University. My interests include software design
-            and development, web design, database systems, and data privacy. I
-            have currently completed internships in web development, mobile app
-            development, finance, and am always looking for further
-            opportunities to learn and collaborate in interesting environments.
-            Check out my resume and LinkedIn to learn more about my experience.
+            Hello! My name is Holden. I am a Data &amp; AI Engineer based in
+            Toronto, ON, with a Computer Science degree from McGill University.
+            My interests include data engineering, system design, scalable
+            pipeline architecture, and applied AI. I am also a strong advocate
+            for data privacy and believe it should be a core consideration in
+            how we build modern systems. I am currently working at Sagard and am
+            always looking for opportunities to collaborate on interesting
+            problems. Check out my resume and LinkedIn to learn more about my
+            experience.
           </p>
         </SectionText>
       </Section>

@@ -27,9 +27,10 @@ const LandingTitle = () => {
         <Header>Holden Folk</Header>
         <SubHeader>{displayedText}</SubHeader>
         <ContentText>
-          I&apos;m a CS major at McGill University with a passion for software
-          design and web development. Explore this page to learn about my
-          experiences, interests, and projects.
+          I&apos;m a Data &amp; AI Engineer with a passion for building scalable
+          data systems, designing robust pipelines, and exploring the
+          intersection of AI and data privacy. Explore this page to learn about
+          my experiences, interests, and projects.
         </ContentText>
       </TitleContainer>
     </TitleCenterContainer>
